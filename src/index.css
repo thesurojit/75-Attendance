@@ -1,62 +1,80 @@
 @import url('https://fonts.googleapis.com/css2?family=Eczar&family=Shadows+Into+Light&display=swap');
 
 body {
-  margin: 0;
-  font-family: 'Eczar', serif;
-  /* font-family: 'Shadows Into Light', cursive; */
-  /* -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; */
-}
-* {
-  /* font-family: "Verdana", cursive, sans-serif; */
-  /* color: #ffffff; */
-}
-
-body {
-  /* background-image: url("./Image/stdasms.jpg"); */
-  background: #9796f0;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #fbc7d4, #9796f0);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #fbc7d4, #9796f0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
-
-  background-repeat:no-repeat;
-  /* background-position: center; */
-  background-size: 100% 100%;
+  background: #9796f0;
+  background: -webkit-linear-gradient(to right, #fbc7d4, #9796f0);
+  background: linear-gradient(to right, #fbc7d4, #9796f0);
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  
 }
-h1,h3,h4{
-  color: black;
+
+h1,
+h3,
+h4 {
+  color: #3d3bb0;
 }
-.App{
-  border: 2px solid black;
+
+h6 {
+  color: red;
+}
+
+.App {
+  margin-top: 1vh;
+  width: 60vw;
+  background: rgba(255, 255, 255, 0.16);
+  border-bottom-left-radius: 10vw;
+  border-bottom-right-radius: 10vw;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.4px);
+  -webkit-backdrop-filter: blur(1.4px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.App:hover {
+  background: linear-gradient(to right, #fbc7d4, #9796f0);
+  border: transparent;
+}
+
+h1 {
   margin-top: 2vh;
-/* From https://css.glass */
-background: rgba(255, 255, 255, 0.03);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(0.5px);
--webkit-backdrop-filter: blur(0.5px);
-border: 1px solid rgba(255, 255, 255, 0.2);
+  background: #9796f0;
+  background: linear-gradient(to left, #fbc7d4, #9796f0);
 }
-label{
-  margin-bottom: 2hv ;
+
+label {
+  margin-bottom: 2hv;
 }
-.Form{
+
+.Form {
   margin-top: 5vh;
   display: inline-block;
 }
-.footer{
+
+.footer {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .fa.fa-github {
   margin-left: 10px;
   font-size: smaller;
+}
+
+.btn {
+  border-radius: 25px;
+  background-color: transparent;
+  border: transparent;
+}
+
+.form-control {
+  background-color: transparent;
+  border: transparent;
+}
+
+.form-control:hover {
+  background: linear-gradient(to right, #fbc7d4, #9796f0);
 }
 
 button {
@@ -73,9 +91,14 @@ button {
   align-items: center;
   border: 5px solid #234668;
 }
-input{
+
+input {
   margin-bottom: 2vh;
+  text-align: center;
 }
 
-
-
+.btn:hover {
+  background-color: #9796f0;
+  background: linear-gradient(to left, #fbc7d4, #9796f0);
+  border: transparent;
+}
